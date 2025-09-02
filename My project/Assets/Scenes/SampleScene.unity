@@ -744,8 +744,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1850582733}
   - component: {fileID: 1850582732}
-  - component: {fileID: 1850582731}
   - component: {fileID: 1850582730}
+  - component: {fileID: 1850582734}
   m_Layer: 0
   m_Name: Future Camera
   m_TagString: Untagged
@@ -797,14 +797,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!81 &1850582731
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1850582729}
-  m_Enabled: 1
 --- !u!20 &1850582732
 Camera:
   m_ObjectHideFlags: 0
@@ -871,6 +863,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1850582734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850582729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ebcbe70ff9b44d71901fc1dc26bf6ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 330585545}
+  selfCamera: {fileID: 1850582732}
 --- !u!1 &1998821058
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,8 +887,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1998821062}
   - component: {fileID: 1998821061}
-  - component: {fileID: 1998821060}
   - component: {fileID: 1998821059}
+  - component: {fileID: 1998821063}
   m_Layer: 0
   m_Name: Past Camera
   m_TagString: Untagged
@@ -934,14 +940,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!81 &1998821060
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1998821058}
-  m_Enabled: 1
 --- !u!20 &1998821061
 Camera:
   m_ObjectHideFlags: 0
@@ -1008,6 +1006,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1998821063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998821058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ebcbe70ff9b44d71901fc1dc26bf6ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 330585545}
+  selfCamera: {fileID: 1998821061}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

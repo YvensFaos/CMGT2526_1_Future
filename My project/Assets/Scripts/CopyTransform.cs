@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class CopyTransform : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private Camera target;
+    [SerializeField]
+    private Camera selfCamera;
 
-    // Update is called once per frame
-    void Update()
+    private void LateUpdate()
     {
-        
+        if (target == null || selfCamera == null) return;
+        transform.position = target.transform.position;
+        transform.rotation = target.transform.rotation;
+        selfCamera.fieldOfView = target.fieldOfView;
     }
 }
